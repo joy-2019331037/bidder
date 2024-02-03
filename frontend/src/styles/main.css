@@ -1,8 +1,34 @@
+.mainHeader{ 
+  margin: 3rem 10rem 0rem 10rem ;
+  text-align: center;
+  border-bottom: 1px solid rgb(207, 204, 204);
+}
+
+.mainHeader p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(242, 120, 120);
+}
+
+.box{
+ width: fit-content;
+ height: fit-content;
+ justify-content: center;
+ align-items: center;
+ margin: 0;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin:10rem;
+  margin-left:10rem;
+  margin-right: 10rem;
   align-items: center;
   gap: 3rem;
+}
+.title{
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
 }

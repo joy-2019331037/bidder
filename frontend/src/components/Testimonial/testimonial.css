@@ -1,0 +1,80 @@
+.testimonial_title .testimonial_title_text{
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: rgb(2, 27, 60);
+}
+
+  
+.testimonial_title{
+  margin:13rem 13rem 2rem 13rem;
+  border-bottom:2px solid rgb(248, 190, 190);
+
+  div{
+    color: white;
+  }
+}
+
+
+.mySwiper {
+ margin: 0rem 15rem 0rem 15rem;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+  
+ .mySwiper .slider {
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-bottom: 1rem;
+  }
+
+.swiper-client-msg{
+  margin: 2rem 2rem 0.5rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(187, 126, 244, 0.15) 10px 10px 0px 0px;
+}
+
+.swiper-client-msg p{
+  font-size: medium;
+}
+
+.swiper-client-data{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:15px;
+
+  .client-data-details{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+
+    .client-name{
+      font-size: larger;
+    }
+    .client-desig{
+      font-size: 12px;
+      text-align: left;
+      font-weight: 300;
+    }
+  }
+}
+.swiper-client-data img{
+  max-width: 4rem;
+  max-height:4rem;
+  border-radius: 50%;
+  border: 2px solid rgb(123, 83, 202);
+}

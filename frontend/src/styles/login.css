@@ -1,0 +1,48 @@
+.dabba{
+    margin-top:8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+}
+
+.dabba img{
+    margin-top: 1rem;
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.dabba input{
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 25px;
+    border: 0.5px solid gray;
+    border-radius: 1px;
+    
+}
+
+.dabba .button{
+    width: 250px;
+    height: 28px;
+    border-radius: 20px;
+    color: black;
+    border: none;
+    background-color: rgb(115, 200, 160);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    gap:10rem;
+    margin-bottom: 1rem;
+}
+
+.header .ft i{
+    padding-left: 10px;
+}

@@ -5,6 +5,10 @@ import { Form, FormGroup, Button } from "reactstrap";
 import { AuthContext } from "../context/Authcontext.js";
 import { BASE_URL } from "../utils/config.js";
 
+import logo from "../assets/images/LOGO.png";
+
+import "../styles/login.css";
+
 const Login = () => {
   const navigate = useNavigate();
   const { dispatch } = useContext(AuthContext);
@@ -44,14 +48,51 @@ const Login = () => {
         console.log(result.data);
 
         dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
-        navigate("/main");
+        navigate("/home");
       }
     } catch (error) {
       dispatch({ type: "LOGIN_FAILURE", payload: error.message });
     }
   };
   return (
-    <div>
+    <center>
+      <div className="dabba">
+        <img src={logo} alt="" />
+        <div className="header">
+          <label>Sign In</label>
+          <div className="ft">
+            <i class="ri-facebook-circle-line"></i>
+            <i class="ri-twitter-line"></i>
+          </div>
+        </div>
+        <input
+          type="email"
+          id="email"
+          placeholder="Usermail"
+          onChange={handleChange}
+        />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          onChange={handleChange}
+        />
+
+        <Button className="button" type="submit" onClick={handleClick}>
+          Login
+        </Button>
+
+        
+      </div>
+    </center>
+  );
+};
+
+export default Login;
+
+/*
+<div>
       <Form>
         <FormGroup>
           <input
@@ -75,7 +116,4 @@ const Login = () => {
         </Button>
       </Form>
     </div>
-  );
-};
-
-export default Login;
+*/
